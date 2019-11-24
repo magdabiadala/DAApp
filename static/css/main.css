@@ -1,44 +1,74 @@
 h1 {
-  color: #002395;
+  color: #444444;
+  font-size: 30px;
 }
 
 body{
-  background-image: url("/static/img/bg.jpg");
+  background-color: #97C4D1;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.5px;
 }
 
 input[type=file], select {
-  width: 100%;
+  width: 25%;
+  background-color: #26728F;
+  color: #F4DAD9;
   padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+  margin: 50px auto;
+  display: block;
+  border: 1px solid #444444;
+  border-radius: 40px;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 35px 5px rgba(204,204,204,0.9);
+  -moz-box-shadow: 4px 4px 35px 5px rgba(204,204,204,0.9);
+  box-shadow: 4px 4px 35px 5px rgba(204,204,204,0.9);
+  font-size: 13px;
+  transition: all 0.3s ease-in-out;
 }
 
+input[type=file]:hover {
+  background-color: #DB8590;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
 input[type=submit] {
-  width: 100%;
-  background-color: #002395;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
+  width: 50%;
+  background-color: #26728F;
+  color: #F4DAD9;
+  padding: 12px 20px;
+  display: block;
+  margin: 100px auto;
+  border: 1px solid #444444;
+  border-radius: 40px;
   cursor: pointer;
+  -webkit-box-shadow: 4px 4px 35px 5px rgba(204,204,204,0.9);
+  -moz-box-shadow: 4px 4px 35px 5px rgba(204,204,204,0.9);
+  box-shadow: 4px 4px 35px 5px rgba(204,204,204,0.9);
+  font-size: 13px;
+  transition: all 0.3s ease-in-out;
 }
 
 input[type=submit]:hover {
-  background-color: #72bcd4;
+  background-color: #DB8590;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Menu */
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 2px;
+  padding: 2px;
   overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f324;
+  border: 1px solid #444444;
+  background-color: #F4DAD9;
+  border-radius: 40px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
 }
 
 nav ul li {
@@ -46,15 +76,16 @@ nav ul li {
 }
 
 nav ul li a {
-  display: block;
-  color: #666;
+  display:block;
+  color: #444444;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 nav ul li a:hover:not(.active) {
-  background-color: #ddd;
+  background-color: #26728F;
+  border-radius: 40px;
 }
 
 /* Tables */
@@ -71,6 +102,6 @@ th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #002395;
+  background-color: #26728F;
   color: white;
 }
