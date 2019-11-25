@@ -75,7 +75,7 @@ def analiza_danych(request):
                     square=True, linewidths=.5, cbar_kws={"shrink": .5})
 
 
-        matrix.figure.savefig(r'\..\..\..\static\img\matrix.png')
+        matrix.figure.savefig(r'C:\Users\Magda\Desktop\kogni\KCK\DAApp\static\img\matrix.png')
 
         r_table = df.corr()
         p_table = df.apply(lambda x: df.apply(lambda y: r_xor_p(x, y,
